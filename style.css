@@ -1,0 +1,95 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f3f5fb;
+    color: #222b45;
+}
+
+.container {
+    width: min(900px, 92%);
+    margin: 40px auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: #5142b8;
+    font-size: clamp(28px, 5vw, 40px);
+}
+
+.panel, .task-card {
+    background: white;
+    padding: 24px;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px #18254a12;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 14px 0 7px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d7dbea;
+    border-radius: 8px;
+    font: inherit;
+}
+
+textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+
+button {
+    padding: 11px 16px;
+    margin: 12px 5px 0 0;
+    border: none;
+    border-radius: 8px;
+    background: #6654d9;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+.task-card h3 {
+    overflow-wrap: anywhere;
+}
+
+.task-card p {
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+}
+
+.completed {
+    color: #16804a;
+    font-weight: bold;
+}
+
+#message {
+    color: #5142b8;
+}
+
+@media (max-width: 600px) {
+    .container {
+        margin: 20px auto;
+    }
+
+    .panel, .task-card {
+        padding: 17px;
+    }
+}
